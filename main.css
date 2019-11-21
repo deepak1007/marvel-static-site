@@ -1,0 +1,262 @@
+
+*{margin:0px ; padding:0px ; box-sizing:border-box}
+
+body {background:whitesmoke; background-size:cover;background-position-x:center; background-position-y:-25vmax;animation:bgscroll 6s 1 forwards; background-repeat:repeat-y; overflow-x:hidden;
+    
+    ; width:100vw; min-height:100vh; background-attachment: fixed;}
+
+
+
+/*header for all*/
+
+header {z-index:2000;position:fixed;margin:0px; top:0px;display:flex; justify-content: space-around; color:white ; width:100%;height:45px; align-items:center;}
+header .logo h2 {font-size:35px;font-family:'Roboto';}
+header .hidbut button{display:none; border:none;background:#051e3e; width:40px ; color:white; height:25px;margin-right:20px;font-size:30px;}
+header .links {width:34%;}
+header .links ul {display: flex; justify-content:space-around; list-style-type: none; padding-left:none;}
+header .links ul li a {text-decoration: none; font-size:20px; width:100%; height:100%;color:white; text-transform: uppercase; text-shadow:2px 2px 3px black;font-family:'roboto'}
+
+header .changed {width:100%;height:200px;}
+header .changed ul {margin-top:5px;display: flex ;justify-content:space-around;flex-direction:column; list-style-type: none; width:100%; height:200px;}
+header .changed ul li{width:100%;height:66.6%; background:rgba(101, 30, 62, 0.9) }
+header .changed ul li a {text-decoration: none; font-size:20px;color:white; text-transform: uppercase; text-shadow:2px 2px 3px black; text-align:center; display:block; width:100%; height:100%;padding-top:15px; border-bottom:1px solid rgba(0,0,0,0.8); }
+
+
+
+
+
+.section  {display:flex; flex-direction:row; width:100vw;height:80vh ; background:url(./images/minimized/thanos-vs-avengers-artwork.jpg); background-repeat:no-repeat; background-size:cover;opacity:1;margin:0px 0px; padding:0px 0px; align-items:center; justify-items:space-around; -webkit-box-shadow: inset 60vw 10vh 141px 80px rgba(0,0,0,0.8);
+    -moz-box-shadow:inset 60vw 32px 141px 80px rgba(0,0,0,0.8);
+    box-shadow: inset 70vw 10vh 141px 80px rgba(0,0,0,0.69); background-position-x:right; position:relative;}
+
+.headthough {height:100vh;width:100%;}
+/*.section  .img {height:100%; width:50%;background:#451e3e ;-webkit-clip-path: polygon(0 0, 61% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 61% 0, 100% 100%, 0% 100%);  }*/
+.section  .text { display:flex;  flex-direction:column;  align-items:center; width:70%; height:50%;font-family:'roboto';position:absolute; top:50%;  transform:translate(0%,-70%);}
+.section  .text p { width:80%; text-align:center;line-height:4vh; font-size:20px;opacity:1;color:white; font-family:'roboto'}
+.section  .text h2{font-size:10vh;color: white}
+.headthough .text{position:absolute ; top:50%; left:50%; transform:translate(-50%,-40%);}
+.headthough .text h2 {animation:floatt 4s infinite;}
+.headthough .text p {animation:floatt 4s infinite;}
+
+ .foot {position:absolute; bottom:0px; width:100vw; display:flex; justify-content:center; position:fixed;z-index:9900;}
+ .foot img{width:30px;margin:10px 20px; animation:floatt 2s infinite;}
+ .foot img:hover{animation:rotate 1s infinite;}
+
+
+.section:nth-child(even){
+    flex-direction:row-reverse;
+    
+}
+.section:nth-child() {height:100vh;}
+
+
+
+
+/*iron*/
+#about {background:url('./images/minimized/thony.jpg'); background-repeat:repeat;background-position-x:right;box-shadow: inset 70vw 10vh 141px 80px rgba(0,0,0,0.87);}
+#powers {background:url('./images/minimized/irrr1.jpg');box-shadow: inset -68vw 5vh 141px 80px rgba(0, 0, 0, 0.94); min-height:80vh}
+
+
+
+
+
+/*thor*/
+#thorabout {background:url('./images/minimized/thorr-min.png'); background-repeat:repeat; background-position-x:right; box-shadow: inset 55vw 10vh 141px 80px rgba(0, 0, 0, 0.98);}
+#thormain{background:url('./images/minimized/thormain-min (1).jpg');box-shadow: inset -55vw 10vh 141px 80px rgba(0, 0, 0, 0.64);}
+#thorpowers{background:url('./images/minimized/maxresdefault-min.jpg');box-shadow: inset -70vw 10vh 141px 80px rgba(0, 0, 0, 0.90);}
+
+
+/*captain america*/
+#capmain{background:url('./images/minimized/captan.jpg');background-repeat:no-repeat; background-size:cover;box-shadow: inset -55vw 10vh 141px 80px rgba(0, 0, 0, 0.64);}
+#capabout {background:url('./images/minimized/steve.jpg'); background-repeat:repeat; background-position-x:right; box-shadow: inset 55vw 10vh 141px 80px rgba(0, 0, 0, 0.98);}
+#cappowers{background:url('./images/minimized/worthy.jpg');box-shadow: inset -70vw 5vh 141px 80px rgba(0, 0, 0, 0.98); background-repeat:repeat-x; background-position-x:-55%; }
+
+
+/*thanos*/
+#thanosmain{background:url('./images/minimized/14865-min.jpg'); background-repeat:no-repeat; background-size:cover; background-size:cover;box-shadow: inset -55vw 10vh 141px 80px rgba(0, 0, 0, 0.64);}
+
+#thanosabout {background:url('./images/minimized/1Pgh5.jpg'); background-repeat:repeat; background-position-y:-150px;;box-shadow: inset 60vw 10vh 141px 80px rgba(0, 0, 0, 0.5);}
+
+#thanospowers{background:url('./images/minimized/thumb-1920-918805\ \(1\)-min-min.jpg');background-size:cover;;box-shadow: inset -55vw 5vh 141px 80px rgba(0, 0, 0, 0.69); }
+
+
+/*movies for all*/
+.movies { display:flex; flex-direction:row; justify-content:center;width:100%; min-height:60vh ;flex-wrap:wrap; }
+.movies #pics {display:flex; flex-direction:column; justify-content:flex-end; width:50%; height:100%; }
+.movies #text {width:40%; height:100%;  display:flex;  flex-direction:column;  justify-content:center;align-items:center;font-family:'roboto';}
+.movies #text p { width:100%; text-align:center;line-height:5vh; font-size:20px; opacity:1;color:white; font-family:'roboto'}
+.movies #text h2{font-size:9vh;color: white; font-family: 'roboto',Times New Roman, Times, serif; letter-spacing:5px; }
+.movies #pics #emb{width:100%; height:70%; display:flex; flex-direction:column; overflow:hidden; }
+.movies #pics #emb iframe {display:block;width:100%; height:100% !important;}
+.movies #pics #navbut {width:100%; height:20%; display:flex; justify-content:center;}
+#navbut img {width:50px; height:50px; margin:10px 30px;}
+#navbut img:hover {width:55px;}
+.movies #pics .ifram {width:100%;height:100%;}
+
+/*tony*/
+#movietony{background:url(images/minimized/robert-downey-jr.jpg);box-shadow: inset 55vw 5vh 141px 80px rgba(0, 0, 0, 0.88);background-size:cover; background-repeat:no-repeat;}
+
+#moviethanos {background:url('images/thanoss (1).jpg');box-shadow: inset 55vw 5vh 141px 80px rgba(0, 0, 0, 0.88);background-size:cover; background-repeat:no-repeat}
+
+#moviethor {background:url('images/minimized/301678-min (1).jpg');box-shadow: inset 55vw 5vh 141px 80px rgba(0, 0, 0, 0.88);background-size:cover; background-repeat:no-repeat; background-position-y:center;}
+
+
+
+/*movie ends*/
+
+/* for all*/
+#armours {width:100%; height:20vh; background-color:black; border:2px solid black;}
+#armours h2{width:100%; height:100%; color:white; text-transform: uppercase; text-align:center; padding:5% 0%; font-family:'roboto'; font-size:30px; letter-spacing: 23px;;}
+
+.au{ appearance: none; display:flex; flex-direction:row;background:black;flex-wrap:wrap; justify-content:space-between; width:100%; min-height:50vh}
+
+.au div{width:18%; min-height:70%; color:white; font-family: 'roboto',Times New Roman, Times, serif; text-transform:uppercase; letter-spacing: 3px;text-align:center;;}
+.au div img{width:100%;}
+
+
+
+
+/*endhere*/
+
+
+/*quotes*/
+.tonyend { height:100vh; background:url(images/minimized/ironinfi.jpg); background-repeat:repeat;background-position-x:left;box-shadow: inset -69vw 5vh 141px 80px rgba(0,0,0,0.97); position:relative; }
+
+.tonyend div{ color:white; position:absolute; top:50%; left:50%; transform:translate(-30%,-50%);  height:50%; display:flex;flex-direction:column; justify-content:space-around; }
+.tonyend div p {font-size:2.9vh; font-family:'roboto','Times New Roman', Times, serif; letter-spacing:2px; text-align:center;}
+
+.thanosend {height:100vh; background:url(images/minimized/thanosend.jpg); background-repeat:repeat-x; overflow:hidden;background-position-x:left;box-shadow: inset -60vw 10vh 141px 80px rgba(0,0,0,0.96); position:relative; background-size:38% 100%}
+.thanosend div{ color:white; position:absolute; top:50%; left:50%; transform:translate(-30%,-50%);  height:50%; display:flex;flex-direction:column; justify-content:space-around; }
+.thanosend div p {font-size:2.9vh; font-family:'roboto','Times New Roman', Times, serif; letter-spacing:2px; text-align:center;}
+
+.thorend {height:100vh; background:url('./images/thora.jpg'); background-repeat:repeat-x; overflow:hidden;background-position-x:left;box-shadow: inset -70vw 10vh 141px 80px rgba(0,0,0,0.98); position:relative; background-size:38% 100%}
+.thorend div{ color:white; position:absolute; top:50%; left:50%; transform:translate(-30%,-50%);  height:50%; display:flex;flex-direction:column; justify-content:space-around; }
+.thorend div p {font-size:2.9vh; font-family:'roboto','Times New Roman', Times, serif; letter-spacing:2px; text-align:center;}
+
+
+
+/*quotes ends*/
+
+
+
+/*.section:nth-child(even) .img{
+    
+    -webkit-clip-path: polygon(36% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(36% 0, 100% 0, 100% 100%, 0% 100%);
+}*/
+@keyframes bgscroll
+{   0% {background-position-y : -10vmax;}
+    
+    50% {background-position-y:-40vmax;}
+    
+    90% {background-position-y:-25vmax;}
+}
+
+@keyframes rotate{
+    50%{
+        transform:rotate(20deg)
+    }
+}
+
+@keyframes floatt{
+    50%{
+        transform:translate(0%,6%)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1222px) {
+    
+    .section  .text p {width:80%; text-align:center; line-height:2.7vh; font-size:2.6vw;opacity:1;color:white; font-family:'roboto'}
+    .section .text {width:85%}
+    
+}
+
+@media screen and (max-width:700px){
+header .links {display:none;}
+header .hidbut button{display:block;}
+header { justify-content:space-between; flex-wrap:wrap;align-items:center;height:50px; }
+header .logo h2 {font-size:40px;margin-left:10px;}
+body {background-position-y:0px; background-attachment: scroll; overflow-x:hidden; background-size:100% 100vh; background-position-x: center;}
+body{animation:none;}
+.section {display:flex; width:100%; height:100vh; position:relative; flex-direction: column; }
+.section .text {width:100%;}
+.headthough {height:100vh;}
+.headthough .text{position:absolute ; top:50%; left:50%; transform:translate(-50%,-40%);}
+.section  .text p {width:90%; text-align:center ; line-height:3.5vh; font-size:20px;opacity:1;color:white; font-family:'roboto'}
+.section .text h2 {font-size:7vh;  width:100%; text-align:center;}
+
+/*tony*/
+#about {background-repeat:no-repeat; text-shadow:1px 1px 2px black; background-position-x:center;box-shadow: inset 100vw 105vh 141px 80px rgba(0, 0, 0, 0.66); height:106vh}
+#powers {box-shadow: inset 100vw 105vh 141px 80px rgba(0, 0, 0, 0.74);text-shadow:1px 1px 2px black; background-size:cover; background-position:center; height:106vh;}
+
+
+.tonyend{background-position-y:center;box-shadow: inset 100vw 100vh 141px 80px rgba(0,0,0,0.65);}
+.tonyend div{transform:translate(-50%,-50%); width:80%}
+
+.thanosend{background-position-y:center;background-repeat:no-repeat;background-size:cover;box-shadow: inset 100vw 100vh 141px 80px rgba(0,0,0,0.59);}
+.thanosend div{transform:translate(-50%,-50%); width:80%}
+
+
+/*tony ends here*/
+
+.movies { display:flex; flex-direction:column;width:100%; min-height:90vh ; box-shadow:none;flex-wrap:nowrap}
+.movies #pics{width:100%;display:block; height:50%}
+.movies #text{width:100%; height:50%; margin-bottom:20px;display:block;}
+.movies #text h2{text-align:center; font-size:40px; font-family:'roboto','Times New Roman', Times, serif; letter-spacing:4px;}
+
+/* movies */
+/*tony*/
+#movietony{box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.55);background-size:cover; background-repeat:no-repeat; background-position-x:center;}/*tony ends here*/
+
+/*thanos*/
+#moviethanos {background:url('images/thanoss (1).jpg');box-shadow: inset 55vw 5vh 141px 80px rgba(0, 0, 0, 0.88);background-size:cover; background-repeat:no-repeat; background-position:center;}
+/*movies end here*/
+
+#thann{ appearance:none;display:flex; flex-direction:column; justify-content:none; }
+.au {appearance:none;display:flex; flex-direction:column ; background:black;justify-content:none; align-items:center;flex-wrap:nowrap; min-height:100%;overflow:auto; width:100%; }
+.au div{ appearance:none; width:90%; display:flex; height:20vh; flex-direction:column;background:black;}
+.au div img{appearance:none;height:80%; width:100%  }
+
+/*thor*/
+#thorabout { background-repeat:no-repeat;background-size:cover; background-position-x:center; box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.74);}
+#thormain{box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.5); background-position-x:-350px}
+#thorpowers{box-shadow: inset -70vw 10vh 141px 80px rgba(0, 0, 0, 0.90);box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.74); background-position:center;}
+
+/*captain america*/
+#capmain{box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.5); background-position-x:-200px}
+#capabout { background-repeat:no-repeat;background-size:cover; background-position-x:center; box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.74);}
+#cappowers{box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.60);background-position-x:center;}
+
+
+
+#thanosmain{box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.5); background-position-x:center;}
+#thanosabout{ background-repeat:no-repeat; min-height:102vh; background-position-x:center; box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.55);}
+#thanospowers{box-shadow: inset 100vw 100vh 141px 80px rgba(0, 0, 0, 0.60);background-position-x:center;}
+
+
+
+}
+
+
+
+@media screen and (max-width:400px){
+    .section{height:115vh}
+   
+}
+
+@media screen and (min-width:1223px){
+    .thannn{justify-content:space-around;}
+    .thorau{justify-content:space-around;}
+}
